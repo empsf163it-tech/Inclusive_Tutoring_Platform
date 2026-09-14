@@ -1,1 +1,888 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TutorAble — Inclusive tutoring designed around every unique learner. Neuro-affirming, personalized academic support.">
+  <meta name="theme-color" content="#55365F">
+  <title>TutorAble — Every learner. Their way. Their pace.</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@500;600;700&family=Chewy&family=Inter:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress"><span></span></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TutorAble home">
+      <img src="favicon.png" alt="" class="brand-icon">
+      <span class="brand-word">Tutor<span>Able</span></span>
+    </a>
+
+    <!-- Exactly 5 Navigation Links -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#tutors">Find a Tutor</a>
+      <a href="#plans">Learning Plans</a>
+      <a href="#parents">For Parents</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="login-btn" type="button" data-login>Login</button>
+      <a class="nav-cta" href="#tutors">Get Started <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HOME -->
+    <section class="hero section" id="home">
+      <div class="hero-orbit orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-b" aria-hidden="true"></div>
+
+      <!-- Sub-section 1.1: Hero Copy & Visuals -->
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span>✦</span> Inclusive tutoring, thoughtfully designed</div>
+        <h1>Every learner.<br><em>Their way.</em><br>Their pace.</h1>
+        <p class="hero-lede">
+          Personalized tutoring, multisensory strategies, and neuro-affirming academic support designed around how each unique mind learns best.
+        </p>
+
+        <!-- Specialization Pills -->
+        <div class="hero-pills">
+          <span>ADHD &amp; Focus</span>
+          <span>Dyslexia &amp; Literacy</span>
+          <span>Math Anxiety</span>
+          <span>Executive Function</span>
+          <span>Autism Support</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#tutors">Find Your Tutor <span>→</span></a>
+          <a class="text-link" href="#how-it-works">See how it works <span>↗</span></a>
+        </div>
+
+        <div class="hero-note">
+          <span class="mini-avatars"><i>R</i><i>A</i><i>M</i><i>K</i></span>
+          <div><strong>1,200+</strong> learners finding confidence &amp; joy in learning</div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay">
+        <div class="hero-logo-wrap">
+          <img src="logo.png" class="hero-logo" alt="TutorAble logo showing a tutor and learner sharing an open book">
+          <div class="logo-scan" aria-hidden="true"></div>
+        </div>
+
+        <div class="floating-card match-card">
+          <div class="avatar-round">P</div>
+          <div class="match-info">
+            <small>Matched tutor</small>
+            <strong>Priya Sharma</strong>
+            <span>Mathematics · Dyscalculia Support</span>
+          </div>
+          <b>98% match</b>
+        </div>
+
+        <div class="floating-card progress-card">
+          <div class="progress-head"><span>Your learning path</span><b>80%</b></div>
+          <div class="progress-bar"><span></span></div>
+          <div class="progress-label"><span>Multi-step Math</span><span>Keep going ✦</span></div>
+        </div>
+
+        <div class="floating-sticker">Learn<br><b>your way</b> ✦</div>
+      </div>
+    </section>
+
+    <!-- Sub-section 1.2: Trust Strip & Impact Metrics -->
+    <section class="trust-strip">
+      <span>BUILT FOR DIFFERENT WAYS OF LEARNING</span>
+      <div>
+        <span>Personalized</span><i>✦</i>
+        <span>Patient</span><i>✦</i>
+        <span>Neuro-Affirming</span><i>✦</i>
+        <span>Accessible</span><i>✦</i>
+        <span>Evidence-Based</span>
+      </div>
+    </section>
+
+    <section class="metrics-strip section reveal">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <b>98%</b>
+          <span>Parent &amp; Student Satisfaction</span>
+        </div>
+        <div class="metric-item">
+          <b>500+</b>
+          <span>Vetted Specialized Educators</span>
+        </div>
+        <div class="metric-item">
+          <b>100%</b>
+          <span>Neuro-Affirming Standard</span>
+        </div>
+        <div class="metric-item">
+          <b>4.9/5</b>
+          <span>Average Tutor Rating</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-section 1.3: Interactive Learner Match Assistant -->
+    <section class="section quick-match-section reveal">
+      <div class="quick-match-box">
+        <div class="quick-match-head">
+          <div class="eyebrow">Interactive Match Preview</div>
+          <h3>Find Your Recommended Strategy in Seconds <em>✦</em></h3>
+          <p>Select your learner's primary focus area below to explore our tailored tutoring approach:</p>
+        </div>
+        <div class="quick-match-pills">
+          <button class="match-pill active" data-match="adhd">ADHD &amp; Focus</button>
+          <button class="match-pill" data-match="dyslexia">Dyslexia &amp; Phonics</button>
+          <button class="match-pill" data-match="math">Math Anxiety</button>
+          <button class="match-pill" data-match="executive">Executive Function</button>
+          <button class="match-pill" data-match="autism">Autism Spectrum</button>
+        </div>
+        <div class="quick-match-result" id="matchResult">
+          <div class="match-result-card">
+            <h4>Recommended Strategy for <span>ADHD &amp; Focus</span></h4>
+            <p>Body-doubling techniques, 15-minute visual task chunking, low sensory distraction, and instant positive feedback loops.</p>
+            <div class="match-badges">
+              <span>✦ Visual Task Timers</span>
+              <span>✦ Active Movement Breaks</span>
+              <span>✦ High-Engagement Gamification</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: HOW IT WORKS -->
+    <section class="section intro-section" id="how-it-works">
+      <!-- Sub-section 2.1: 4-Step Methodology -->
+      <div class="section-heading reveal">
+        <div class="eyebrow">A better starting point</div>
+        <h2>Learning looks different<br><em>for everyone.</em></h2>
+        <p>Instead of asking learners to fit a rigid curriculum, TutorAble adapts the experience, tools, and communication to the learner.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card mint reveal">
+          <div class="feature-icon">◎</div><span>01</span>
+          <h3>Personalized</h3>
+          <p>Goals, pace, and teaching strategies shaped around each learner's unique cognitive profile.</p>
+          <a href="#plans">Explore plans →</a>
+        </article>
+        <article class="feature-card cream-card reveal reveal-delay-1">
+          <div class="feature-icon yellow">✦</div><span>02</span>
+          <h3>Specialized</h3>
+          <p>Connect with vetted educators experienced in ADHD, Dyslexia, Autism, and Executive Functioning.</p>
+          <a href="#tutors">Meet tutors →</a>
+        </article>
+        <article class="feature-card plum reveal reveal-delay-2">
+          <div class="feature-icon light">♡</div><span>03</span>
+          <h3>Connected</h3>
+          <p>Learners, tutors, and caregivers stay aligned with stress-free session summaries.</p>
+          <a href="#parents">See family view →</a>
+        </article>
+        <article class="feature-card gold-card reveal reveal-delay-3">
+          <div class="feature-icon mint-bg">⚡</div><span>04</span>
+          <h3>Accessible</h3>
+          <p>Multisensory tools, visual timers, customizable fonts, and calm low-stress environments.</p>
+          <a href="#accessibility">Try features →</a>
+        </article>
+      </div>
+
+      <!-- Sub-section 2.2: Traditional vs. TutorAble Comparison -->
+      <div class="comparison-box reveal">
+        <h3>Traditional Tutoring vs. <em>TutorAble</em></h3>
+        <div class="comparison-grid">
+          <div class="comparison-col traditional">
+            <h4>Traditional Approach</h4>
+            <ul>
+              <li>✕ One-size-fits-all repetitive worksheets</li>
+              <li>✕ Focus strictly on grades over confidence</li>
+              <li>✕ High-pressure speed drills and timed tasks</li>
+              <li>✕ Fragmented communication with parents</li>
+            </ul>
+          </div>
+          <div class="comparison-col tutorable">
+            <h4>TutorAble Approach</h4>
+            <ul>
+              <li>✓ Multisensory, hands-on visual learning</li>
+              <li>✓ Focus on self-worth, advocacy &amp; understanding</li>
+              <li>✓ Flexible pacing respecting individual bandwidth</li>
+              <li>✓ Clear parent portal aligned with IEP/504 goals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-section 2.3: Neuro-Affirming Principles -->
+      <div class="principles-box reveal">
+        <div class="eyebrow">Our Core Commitment</div>
+        <h3>Three Pillars of <em>Neuro-Affirming Growth</em></h3>
+        <div class="principles-grid">
+          <div class="principle-card">
+            <div class="p-num">01</div>
+            <h4>Low Sensory Load</h4>
+            <p>Calm colors, customizable fonts, and zero high-stress pressure drills.</p>
+          </div>
+          <div class="principle-card">
+            <div class="p-num">02</div>
+            <h4>Self-Advocacy First</h4>
+            <p>Learners learn how to request breaks, ask questions, and express their learning preferences.</p>
+          </div>
+          <div class="principle-card">
+            <div class="p-num">03</div>
+            <h4>Multisensory Engagement</h4>
+            <p>Visual diagrams, tactile manipulatives, storytelling, and interactive whiteboards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FIND A TUTOR -->
+    <section class="section tutors-section" id="tutors">
+      <!-- Sub-section 3.1: Tutor Filter Bar & 6 Profile Cards -->
+      <div class="section-heading split reveal">
+        <div>
+          <div class="eyebrow">The right fit matters</div>
+          <h2>Find someone who<br><em>gets how you learn.</em></h2>
+        </div>
+        <p>Search by subject, learning style, and specific support needs — not just a generic list of credentials.</p>
+      </div>
+
+      <div class="filter-row reveal" role="toolbar" aria-label="Tutor filters">
+        <button class="filter active" data-filter="all">All tutors</button>
+        <button class="filter" data-filter="mathematics">Mathematics</button>
+        <button class="filter" data-filter="reading">Reading &amp; Literacy</button>
+        <button class="filter" data-filter="executive">Executive Function</button>
+        <button class="filter" data-filter="science">Science &amp; STEM</button>
+        <button class="filter" data-filter="sensory">Sensory &amp; Neuro-Affirming</button>
+      </div>
+
+      <div class="tutor-grid">
+        <!-- Tutor 1 -->
+        <article class="tutor-card reveal" data-subject="mathematics sensory">
+          <div class="tutor-image"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&crop=faces&w=700&h=700&q=85" alt="Priya Sharma portrait">
+            <span class="availability">● Available This Week</span>
+            <span class="rate-badge">$45/hr</span>
+          </div>
+          <div class="tutor-body">
+            <div class="rating">★★★★★ <small>4.9 (48 reviews)</small></div>
+            <h3>Priya Sharma</h3>
+            <p class="tutor-role">Mathematics · Dyscalculia Support</p>
+            <p class="tutor-bio">Uses visual representations and tactile math blocks to replace formula anxiety with intuitive understanding.</p>
+            <div class="tags"><span>Visual Math</span><span>Patient</span><span>Dyscalculia</span></div>
+            <div class="card-bottom"><b>8 yrs exp.</b><a href="#plans" data-login>Book session →</a></div>
+          </div>
+        </article>
+
+        <!-- Tutor 2 -->
+        <article class="tutor-card reveal reveal-delay-1" data-subject="reading sensory">
+          <div class="tutor-image"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&crop=faces&w=700&h=700&q=85" alt="Daniel Reed portrait">
+            <span class="availability">● Available Tomorrow</span>
+            <span class="rate-badge">$42/hr</span>
+          </div>
+          <div class="tutor-body">
+            <div class="rating">★★★★★ <small>5.0 (62 reviews)</small></div>
+            <h3>Daniel Reed</h3>
+            <p class="tutor-role">Reading · Dyslexia &amp; Phonics</p>
+            <p class="tutor-bio">Certified Orton-Gillingham practitioner crafting interactive phonics games that empower confident readers.</p>
+            <div class="tags"><span>Orton-Gillingham</span><span>Interactive</span><span>Calm</span></div>
+            <div class="card-bottom"><b>6 yrs exp.</b><a href="#plans" data-login>Book session →</a></div>
+          </div>
+        </article>
+
+        <!-- Tutor 3 -->
+        <article class="tutor-card reveal reveal-delay-2" data-subject="science">
+          <div class="tutor-image"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&crop=faces&w=700&h=700&q=85" alt="Meera Patel portrait">
+            <span class="availability">● Available Today</span>
+            <span class="rate-badge">$50/hr</span>
+          </div>
+          <div class="tutor-body">
+            <div class="rating">★★★★★ <small>4.9 (39 reviews)</small></div>
+            <h3>Meera Patel</h3>
+            <p class="tutor-role">Science &amp; STEM · Conceptual Learning</p>
+            <p class="tutor-bio">Transforms complex biology and chemistry topics into vivid storytelling and interactive visual models.</p>
+            <div class="tags"><span>Step-by-step</span><span>Visual Labs</span><span>Warm</span></div>
+            <div class="card-bottom"><b>8 yrs exp.</b><a href="#plans" data-login>Book session →</a></div>
+          </div>
+        </article>
+
+        <!-- Tutor 4 -->
+        <article class="tutor-card reveal" data-subject="executive sensory">
+          <div class="tutor-image"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&crop=faces&w=700&h=700&q=85" alt="Marcus Vance portrait">
+            <span class="availability">● Available This Week</span>
+            <span class="rate-badge">$48/hr</span>
+          </div>
+          <div class="tutor-body">
+            <div class="rating">★★★★★ <small>4.9 (54 reviews)</small></div>
+            <h3>Marcus Vance</h3>
+            <p class="tutor-role">Executive Functioning · ADHD Specialist</p>
+            <p class="tutor-bio">Helps students master time management, task chunking, organization, and body-doubling strategies.</p>
+            <div class="tags"><span>ADHD Coaching</span><span>Task Chunking</span><span>Focus Tools</span></div>
+            <div class="card-bottom"><b>7 yrs exp.</b><a href="#plans" data-login>Book session →</a></div>
+          </div>
+        </article>
+
+        <!-- Tutor 5 -->
+        <article class="tutor-card reveal reveal-delay-1" data-subject="sensory executive">
+          <div class="tutor-image"><img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&crop=faces&w=700&h=700&q=85" alt="Elena Rostova portrait">
+            <span class="availability">● Available Tomorrow</span>
+            <span class="rate-badge">$52/hr</span>
+          </div>
+          <div class="tutor-body">
+            <div class="rating">★★★★★ <small>5.0 (41 reviews)</small></div>
+            <h3>Elena Rostova</h3>
+            <p class="tutor-role">Autism Spectrum · Social Communication</p>
+            <p class="tutor-bio">Strengths-based tutor using passion-led learning and explicit, low-anxiety clear instructions.</p>
+            <div class="tags"><span>Strengths-Based</span><span>Sensory-Friendly</span><span>Structured</span></div>
+            <div class="card-bottom"><b>10 yrs exp.</b><a href="#plans" data-login>Book session →</a></div>
+          </div>
+        </article>
+
+        <!-- Tutor 6 -->
+        <article class="tutor-card reveal reveal-delay-2" data-subject="reading mathematics">
+          <div class="tutor-image"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=700&h=700&q=85" alt="Sarah Jenkins portrait">
+            <span class="availability">● Available Today</span>
+            <span class="rate-badge">$40/hr</span>
+          </div>
+          <div class="tutor-body">
+            <div class="rating">★★★★★ <small>4.8 (33 reviews)</small></div>
+            <h3>Sarah Jenkins</h3>
+            <p class="tutor-role">Early Literacy &amp; Math Confidence</p>
+            <p class="tutor-bio">Specializes in young learners needing gentle pacing, playful engagement, and anxiety-free learning routines.</p>
+            <div class="tags"><span>Playful</span><span>Gentle Pace</span><span>Early Years</span></div>
+            <div class="card-bottom"><b>5 yrs exp.</b><a href="#plans" data-login>Book session →</a></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sub-section 3.2: Tutor Match Score Criteria -->
+      <div class="match-criteria-box reveal">
+        <h3>How We Calculate Your <em>98%+ Tutor Match Score</em></h3>
+        <div class="criteria-grid">
+          <div class="criteria-card">
+            <span>01</span>
+            <h4>Cognitive Profile &amp; Style</h4>
+            <p>Matching visual, auditory, or kinesthetic learning preferences with specialized teaching certifications.</p>
+          </div>
+          <div class="criteria-card">
+            <span>02</span>
+            <h4>Sensory Environment</h4>
+            <p>Aligning lighting, noise tolerance, and session break schedules for zero sensory distress.</p>
+          </div>
+          <div class="criteria-card">
+            <span>03</span>
+            <h4>Rapport &amp; Encouragement</h4>
+            <p>Pairing personalities so tutoring feels like working with a trusted, supportive academic mentor.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-section 3.3: 100% Fit Guarantee Box -->
+      <div class="fit-guarantee-box reveal">
+        <div class="guarantee-icon">🛡️</div>
+        <div>
+          <h4>TutorAble 100% Fit Guarantee</h4>
+          <p>If your child's first session with a tutor doesn't feel like a 100% right fit, we will re-match you immediately and cover the cost of your next trial session.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: LEARNING PLANS -->
+    <section class="section plans-section" id="plans">
+      <!-- Sub-section 4.1: 3 Tailored Plan Pathways -->
+      <div class="plan-copy reveal">
+        <div class="eyebrow">Make progress visible</div>
+        <h2>A learning path<br><em>made for one.</em></h2>
+        <p>Turn overwhelming subjects into small, celebratory milestones. We offer three tailored plan tracks adapted continuously as confidence grows.</p>
+        
+        <div class="plan-tracks">
+          <div class="plan-track-card active">
+            <h4>1. Foundations &amp; Confidence</h4>
+            <p>Gentle pacing, reduced anxiety, and foundational skill mastery.</p>
+          </div>
+          <div class="plan-track-card">
+            <h4>2. Neurodivergent Specialized</h4>
+            <p>Multisensory tools, executive coaching, low sensory load.</p>
+          </div>
+          <div class="plan-track-card">
+            <h4>3. Concept &amp; Exam Mastery</h4>
+            <p>Targeted problem solving, self-advocacy, and test prep.</p>
+          </div>
+        </div>
+
+        <a class="button button-dark" href="#parents">Explore Sample Plan <span>→</span></a>
+      </div>
+
+      <!-- Sub-section 4.2: Interactive Milestone & Goal Tracker -->
+      <div class="learning-path reveal reveal-delay">
+        <div class="path-top"><span>Alex's learning path (Math &amp; Focus)</span><b>4 of 5 goals</b></div>
+        <div class="path-line">
+          <div class="path-item done"><i>✓</i><div><b>Foundations</b><small>Completed · Built core number sense</small></div></div>
+          <div class="path-item done"><i>✓</i><div><b>Fractions &amp; Visuals</b><small>Completed · Mastered block models</small></div></div>
+          <div class="path-item current"><i>✦</i><div><b>Multi-Step Problem Solving</b><small>In progress · 80% complete</small></div></div>
+          <div class="path-item"><i>4</i><div><b>Pre-Algebra Concepts</b><small>Next up · Guided visual steps</small></div></div>
+          <div class="path-item"><i>5</i><div><b>Independent Confidence</b><small>Final Milestone · Self-advocacy badge</small></div></div>
+        </div>
+        <div class="plan-stat">
+          <div><span>Current focus topic</span><strong>Multi-step problem strategies</strong></div>
+          <div class="big-progress"><span></span></div><b>80%</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-section 4.3: Adaptive Pacing & Customization Toolkit -->
+    <section class="section plan-toolkit-section reveal">
+      <div class="section-heading text-center">
+        <div class="eyebrow">Adaptive Toolkit</div>
+        <h2>Tools built into every <em>learning plan.</em></h2>
+      </div>
+      <div class="toolkit-grid">
+        <div class="tool-card">
+          <div class="tool-icon">⏱️</div>
+          <h4>Visual Timers</h4>
+          <p>Helps learners track session time with gentle color transitions rather than high-stress countdowns.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🧩</div>
+          <h4>Task Chunking</h4>
+          <p>Breaks large assignments into 10-minute micro-goals that prevent overwhelm.</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">🎨</div>
+          <h4>Multisensory Canvas</h4>
+          <p>Interactive whiteboard featuring drawing, audio clips, and visual block models.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FOR PARENTS -->
+    <section class="section parents-section" id="parents">
+      <!-- Sub-section 5.1: Interactive Parent Dashboard Simulation -->
+      <div class="dashboard-visual reveal">
+        <div class="dash-window">
+          <div class="dash-top">
+            <b>TutorAble</b>
+            <span>Parent Dashboard · Alex</span>
+            <div class="dash-tabs" role="tablist">
+              <button class="dash-tab active" data-tab="overview">Overview</button>
+              <button class="dash-tab" data-tab="notes">Tutor Notes</button>
+              <button class="dash-tab" data-tab="goals">IEP Goals</button>
+            </div>
+          </div>
+          <div class="dash-content">
+            <!-- Tab Panel 1: Overview -->
+            <div class="dash-panel active" id="panel-overview">
+              <div class="welcome"><small>THIS MONTH SUMMARY</small><h3>Alex is making steady progress <em>✦</em></h3></div>
+              <div class="stats">
+                <div><span>Sessions</span><b>4</b><small>completed this month</small></div>
+                <div><span>Milestones</span><b>4/6</b><small>on track</small></div>
+                <div><span>Confidence</span><b>↑ 22%</b><small>measured growth</small></div>
+              </div>
+              <div class="dash-chart">
+                <div class="chart-title"><b>Skill Engagement Trend</b><span>Last 4 weeks</span></div>
+                <div class="bars"><i style="height:42%"></i><i style="height:58%"></i><i style="height:74%"></i><i style="height:90%"></i></div>
+                <div class="chart-labels"><span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Current</span></div>
+              </div>
+              <div class="tutor-note">
+                <div class="note-avatar">P</div>
+                <div><small>NOTE FROM PRIYA (MATH TUTOR) · YESTERDAY</small><p>“Alex solved 3 multi-step word problems independently using visual diagrams!”</p></div>
+                <span>♡</span>
+              </div>
+            </div>
+
+            <!-- Tab Panel 2: Notes -->
+            <div class="dash-panel" id="panel-notes">
+              <div class="welcome"><small>TUTOR FEEDBACK LOG</small><h3>Recent Session Highlights</h3></div>
+              <ul class="notes-list">
+                <li>
+                  <strong>Sept 12 · Priya Sharma</strong>
+                  <p>Focused on visual fraction strips. Alex was engaged for 45 minutes straight using the screen drawing tool.</p>
+                </li>
+                <li>
+                  <strong>Sept 05 · Marcus Vance</strong>
+                  <p>Practiced visual task breakdown for history assignment. Created color-coded checklist.</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tab Panel 3: Goals -->
+            <div class="dash-panel" id="panel-goals">
+              <div class="welcome"><small>IEP &amp; 504 ALIGNMENT</small><h3>Targeted Accommodation Goals</h3></div>
+              <div class="goals-list">
+                <div class="goal-item done"><span>✓</span> <b>Self-Advocacy:</b> Asks for breaks when sensory fatigue starts.</div>
+                <div class="goal-item done"><span>✓</span> <b>Task Chunking:</b> Breaks long assignments into 10-min steps.</div>
+                <div class="goal-item active"><span>✦</span> <b>Math Confidence:</b> Uses block visuals before writing formulas.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub-section 5.2 & 5.3: Caregiver Benefits & IEP Integration -->
+      <div class="parents-copy reveal reveal-delay">
+        <div class="eyebrow">For parents &amp; caregivers</div>
+        <h2>Progress you can<br><em>understand.</em></h2>
+        <p>Stay informed without feeling overwhelmed. See goal tracking, tutor feedback after every session, and meaningful growth in one serene space.</p>
+        <ul class="parent-checklist">
+          <li><span>✓</span> <div><b>Simple Weekly Summaries:</b> Clear insights with zero jargon.</div></li>
+          <li><span>✓</span> <div><b>Tutor Feedback:</b> Direct notes on engagement, wins, and next steps.</div></li>
+          <li><span>✓</span> <div><b>IEP &amp; 504 Integration:</b> Align tutoring directly with school accommodations.</div></li>
+          <li><span>✓</span> <div><b>Zero-Hassle Scheduling:</b> Reschedule or pause anytime with one tap.</div></li>
+        </ul>
+        <a class="text-link dark" href="#accessibility">Explore accessible features <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- Sub-section 5.3: IEP & 504 Alignment Highlight Card -->
+    <section class="section iep-section reveal">
+      <div class="iep-card">
+        <div class="iep-content">
+          <div class="eyebrow">School &amp; Home Synergy</div>
+          <h3>Direct Alignment with <em>IEP &amp; 504 Accommodation Plans</em></h3>
+          <p>TutorAble tutors work alongside parent insights and school IEP goals. We export structured progress summaries that you can bring directly to parent-teacher conferences.</p>
+        </div>
+        <div class="iep-badge">
+          <b>IEP / 504</b>
+          <span>Aligned Progress Reports</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESSIBILITY SECTION -->
+    <section class="section accessibility-section" id="accessibility">
+      <div class="access-copy reveal">
+        <div class="eyebrow">Inclusive by design</div>
+        <h2>The experience should<br><em>adapt too.</em></h2>
+        <p>Accessibility isn't an afterthought. It's woven into how TutorAble is built — from high-contrast palettes to customizable dyslexia-friendly typography and calm motion.</p>
+        
+        <!-- Live Accessibility Toolbar Preview -->
+        <div class="access-demo-widget">
+          <h4>Try Live Accessibility Controls:</h4>
+          <div class="demo-buttons">
+            <button id="toggleDyslexicFont" class="demo-btn" type="button">Font: <span>Standard</span></button>
+            <button id="toggleHighContrast" class="demo-btn" type="button">Contrast: <span>Normal</span></button>
+            <button id="toggleTextSize" class="demo-btn" type="button">Text Size: <span>100%</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="access-grid reveal reveal-delay">
+        <div class="access-card">
+          <b>Aa</b>
+          <span>Readable Type</span>
+          <small>Designed for maximum legibility and reduced cognitive load.</small>
+        </div>
+        <div class="access-card">
+          <b>◐</b>
+          <span>High Contrast</span>
+          <small>Carefully selected HSL palettes easy on sensitive eyes.</small>
+        </div>
+        <div class="access-card">
+          <b>↗</b>
+          <span>Full Keyboard Nav</span>
+          <small>Clear focus outlines and screen reader landmark tags.</small>
+        </div>
+        <div class="access-card">
+          <b>◌</b>
+          <span>Reduced Motion</span>
+          <small>Respects system motion settings for zero sensory distress.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials-section reveal" id="testimonials">
+      <div class="section-heading text-center">
+        <div class="eyebrow">Real Stories</div>
+        <h2>What families and learners<br><em>are saying.</em></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“For the first time, my 11-year-old son with ADHD looks forward to math tutoring. Priya understands his brain and never rushes him.”</p>
+          <div class="reviewer">
+            <strong>Sarah M.</strong>
+            <span>Parent of 5th Grader · Chicago, IL</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“Reading used to make me cry. Mr. Daniel made it feel like a game and taught me how letters connect in a way that actually clicked!”</p>
+          <div class="reviewer">
+            <strong>Leo K. (Age 10)</strong>
+            <span>Dyslexia Student</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>“The parent dashboard gives me complete peace of mind. I can see IEP goals being met week after week without any guesswork.”</p>
+          <div class="reviewer">
+            <strong>David R.</strong>
+            <span>Parent &amp; Educator</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (Center Aligned, Menu Link Removed) -->
+    <section class="section faq-section text-center reveal" id="faq">
+      <div class="section-heading text-center">
+        <div class="eyebrow">Got questions?</div>
+        <h2>Frequently asked<br><em>questions.</em></h2>
+        <p>Everything you need to know about matching, pricing, and how our neuro-affirming tutoring works.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary><b>How does TutorAble match tutors with my child?</b><span class="icon">+</span></summary>
+          <p>We consider subject needs, learning style (visual, auditory, kinesthetic), neurodivergent traits (ADHD, Dyslexia, Autism), personality fit, and availability to ensure an empowering match.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><b>Can tutoring align with my child's IEP or 504 plan?</b><span class="icon">+</span></summary>
+          <p>Yes! Tutors can review your child's IEP or 504 goals and incorporate specific accommodations directly into session plans and progress reporting.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><b>What qualifications do TutorAble tutors have?</b><span class="icon">+</span></summary>
+          <p>All educators undergo rigorous background checks, hold degrees or specialized certifications in education or learning sciences, and complete TutorAble's Neuro-Affirming Training module.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><b>What if a tutor turns out not to be the right fit?</b><span class="icon">+</span></summary>
+          <p>We offer a 100% Fit Guarantee. If your first session doesn't feel right, we'll match you with a new tutor and cover your next session for free.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><b>How long are sessions and how are they structured?</b><span class="icon">+</span></summary>
+          <p>Sessions typically range from 30 to 60 minutes depending on age and sensory bandwidth, including breaks, visual timers, and interactive reflection.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section reveal">
+      <div class="cta-decoration" aria-hidden="true">✦</div>
+      <div class="eyebrow">Ready when you are</div>
+      <h2>Let's make learning<br><em>feel possible.</em></h2>
+      <p>Find personalized support built around the learner — not the other way around.</p>
+      <a class="button button-yellow" href="#tutors">Find Your Tutor <span>→</span></a>
+      <div class="cta-scribble">Every learner belongs here. <span>♡</span></div>
+    </section>
+  </main>
+
+  <!-- REDESIGNED FOOTER (Exactly 5 Menu Links) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand-col">
+        <a class="footer-brand" href="#home" aria-label="TutorAble home">
+          <img src="favicon.png" alt="TutorAble logo" class="footer-icon">
+          <span class="brand-word">Tutor<span>Able</span></span>
+        </a>
+        <p class="footer-desc">
+          Empowering neurodivergent and unique learners through personalized, neuro-affirming tutoring and supportive caregiver progress insights.
+        </p>
+      </div>
+
+      <!-- Exactly 5 Links in Footer Nav -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#tutors">Find a Tutor</a></li>
+          <li><a href="#plans">Learning Plans</a></li>
+          <li><a href="#parents">For Parents</a></li>
+        </ul>
+      </div>
+
+      <!-- Stay Updated & Social Community -->
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <!-- Newsletter Subscribe -->
+        <form class="footer-newsletter" id="newsletterForm">
+          <label for="newsletterEmail">Stay updated with tips &amp; guides:</label>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit" class="button button-primary button-sm">Subscribe</button>
+          </div>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="footer-socials">
+          <span>Connect with our community:</span>
+          <div class="social-icons-row">
+            <a href="#" aria-label="Instagram" class="social-icon-btn social-ig" onclick="return false" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-icon-btn social-fb" onclick="return false" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-icon-btn social-li" onclick="return false" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-icon-btn social-yt" onclick="return false" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="#" aria-label="Twitter X" class="social-icon-btn social-tw" onclick="return false" title="Twitter / X">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Trust &amp; Quality</h4>
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <span class="badge-icon">✓</span>
+            <div><strong>100% Vetted Educators</strong><small>Background checked &amp; certified</small></div>
+          </div>
+          <div class="trust-badge">
+            <span class="badge-icon">✦</span>
+            <div><strong>Neuro-Affirming Standard</strong><small>Strengths-based methodology</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 TutorAble. All rights reserved. Learning made more inclusive.</p>
+      <div class="footer-bottom-links">
+        <a href="#accessibility">Accessibility Statement</a>
+        <span>·</span>
+        <a href="#faq">Privacy Policy</a>
+        <span>·</span>
+        <a href="#faq">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu (Exactly 5 Navigation Links) -->
+  <div class="mobile-menu" aria-hidden="true">
+    <button class="close-menu" type="button" aria-label="Close menu">×</button>
+    <a href="#home">Home</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#tutors">Find a Tutor</a>
+    <a href="#plans">Learning Plans</a>
+    <a href="#parents">For Parents</a>
+    <button class="mobile-login" type="button" data-login>Login</button>
+  </div>
+
+  <!-- Auth Popup Modal (Login & Signup) -->
+  <div class="modal" id="loginModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-login></div>
+    <div class="login-modal">
+      <button class="modal-close" type="button" aria-label="Close modal" data-close-login>×</button>
+      
+      <!-- Complete Brand Logo Header -->
+      <div class="modal-brand-header">
+        <img src="favicon.png" alt="TutorAble logo" class="modal-brand-icon">
+        <span class="brand-word">Tutor<span>Able</span></span>
+      </div>
+
+      <!-- Auth Mode Selector Tabs -->
+      <div class="auth-tabs" role="tablist">
+        <button type="button" class="auth-tab active" id="tabLogin">Sign In</button>
+        <button type="button" class="auth-tab" id="tabSignup">Create Account</button>
+      </div>
+
+      <div class="eyebrow" id="modalEyebrow">Welcome back</div>
+      <h2 id="modalTitle">Your learning<br><em>starts here.</em></h2>
+      <p class="modal-copy" id="modalCopy">Sign in to continue to your personalized TutorAble space.</p>
+
+      <!-- Form 1: Login -->
+      <form id="loginForm" class="auth-form active">
+        <label>Email address
+          <input type="email" id="loginEmail" placeholder="you@example.com" required>
+        </label>
+        <label>Password
+          <div class="password-wrap">
+            <input id="password" type="password" placeholder="••••••••" required>
+            <button type="button" class="toggle-password" data-target="password">Show</button>
+          </div>
+        </label>
+        <div class="form-row">
+          <label class="remember"><input type="checkbox"> Remember me</label>
+          <a href="#" onclick="return false">Forgot password?</a>
+        </div>
+        <button class="button button-primary full" type="submit">Sign In <span>→</span></button>
+        <div class="form-divider"><span>or</span></div>
+        <button class="social-btn" type="button">
+          <svg class="google-svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          <span>Continue with Google</span>
+        </button>
+      </form>
+
+      <!-- Form 2: Signup -->
+      <form id="signupForm" class="auth-form" style="display:none;">
+        <label>Full name
+          <input type="text" id="signupName" placeholder="e.g. Sarah Mitchell" required>
+        </label>
+
+        <label>I am joining as a
+          <div class="role-selector">
+            <label class="role-pill active"><input type="radio" name="userRole" value="parent" checked> Parent / Caregiver</label>
+            <label class="role-pill"><input type="radio" name="userRole" value="learner"> Learner</label>
+            <label class="role-pill"><input type="radio" name="userRole" value="educator"> Educator</label>
+          </div>
+        </label>
+
+        <label>Email address
+          <input type="email" id="signupEmail" placeholder="you@example.com" required>
+        </label>
+
+        <label>Create Password
+          <div class="password-wrap">
+            <input id="signupPassword" type="password" placeholder="Min. 8 characters" required>
+            <button type="button" class="toggle-password" data-target="signupPassword">Show</button>
+          </div>
+        </label>
+
+        <label>Confirm Password
+          <div class="password-wrap">
+            <input id="signupConfirmPassword" type="password" placeholder="Re-enter password" required>
+            <button type="button" class="toggle-password" data-target="signupConfirmPassword">Show</button>
+          </div>
+        </label>
+
+        <div class="form-row">
+          <label class="remember">
+            <input type="checkbox" required> I agree to the <a href="#faq" data-close-login>Terms</a> &amp; <a href="#faq" data-close-login>Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="button button-primary full" type="submit">Create Account <span>→</span></button>
+        <div class="form-divider"><span>or</span></div>
+        <button class="social-btn" type="button">
+          <svg class="google-svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          <span>Sign up with Google</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <button class="top-button" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
