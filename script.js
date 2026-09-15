@@ -19,7 +19,7 @@ $$('.reveal').forEach(el=>revealObserver.observe(el));
 const scrollBar=$('.scroll-progress span');
 const topButton=$('.top-button');
 const sections=$$('main section[id]');
-const navLinks=$$('.desktop-nav a');
+const navLinks=$$('.desktop-nav a, .mobile-menu a');
 
 function updateScroll(){
   const doc=document.documentElement;
